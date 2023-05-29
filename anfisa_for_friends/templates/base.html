@@ -12,21 +12,18 @@
         </title>
     </head>
     <body>
-        <!-- Вынести в header.html -->
-        {% includes/header.html %}
-        <!-- Конец header.html -->
+        {% includes includes/header.html %}
+        <!-- Вынести в header.html --><!-- Конец header.html -->
         <main class="pt-5 my-5">
             <div class="container">
-                <!-- Блок content -->
                 {% block content %}
                 <h1 class="pb-2 mb-0">Главная страница</h1>
                 {% endblock %}
-                <!-- Конец блока content -->
+                <!-- Блок content --><!-- Конец блока content -->
             </div>
         </main>
-        <!-- Вынести в footer.html -->
-        {% includes/footer.html %}
-        <!-- Конец footer.html -->
+        {% includes includes/footer.html %}
+        <!-- Вынести в footer.html --><!-- Конец footer.html -->
     </body>
     <script src="{% static 'js/jquery-3.2.1.slim.min.js'%}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
