@@ -12,7 +12,7 @@
         </title>
     </head>
     <body>
-        {% include includes/header.html %}
+        {% include "includes/header.html" %}
         <!-- Вынести в header.html --><!-- Конец header.html -->
         <main class="pt-5 my-5">
             <div class="container">
@@ -22,7 +22,7 @@
                 <!-- Блок content --><!-- Конец блока content -->
             </div>
         </main>
-        {% include includes/footer.html %}
+        {% include "includes/footer.html" %}
         <!-- Вынести в footer.html --><!-- Конец footer.html -->
     </body>
     <script src="{% static 'js/jquery-3.2.1.slim.min.js'%}"></script>
